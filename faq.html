@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perguntas Frequentes - Organti</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .faq-category {
+      margin-bottom: 3rem;
+    }
+    
+    .faq-category h3 {
+      color: #e74c3c;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #e74c3c;
+    }
+    
+    .faq-item {
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    
+    .faq-question {
+      padding: 1.5rem;
+      background: #f8f9fa;
+      cursor: pointer;
+      font-weight: bold;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s;
+    }
+    
+    .faq-question:hover {
+      background: #e9ecef;
+    }
+    
+    .faq-question::after {
+      content: '+';
+      font-size: 1.5rem;
+      color: #e74c3c;
+      transition: transform 0.3s;
+    }
+    
+    .faq-question.active::after {
+      transform: rotate(45deg);
+    }
+    
+    .faq-answer {
+      padding: 0 1.5rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    }
+    
+    .faq-answer.active {
+      padding: 1.5rem;
+      max-height: 500px;
+    }
+    
+    .faq-answer p {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    
+    .faq-answer p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .search-faq {
+      max-width: 600px;
+      margin: 2rem auto;
+      position: relative;
+    }
+    
+    .search-faq input {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.1rem;
+      border: 2px solid #e74c3c;
+      border-radius: 8px;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navegação -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">Organti</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="features.html">Recursos</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="ai.html">IA</a></li>
+          <li><a href="pricing.html">Preços</a></li>
+          <li><a href="support.html">Suporte</a></li>
+          <li><a href="#" class="btn-book">Começar Agora</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção Hero -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-texts" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h1>Perguntas Frequentes</h1>
+        <p>
+          Encontre respostas rápidas para as dúvidas mais comuns sobre a Organti.
+        </p>
+        <div class="search-faq">
+          <input type="text" placeholder="Pesquise sua dúvida...">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção FAQ -->
+  <section class="features-section">
+    <div class="container">
+      <div class="faq-container">
+        
+        <!-- Categoria: Geral -->
+        <div class="faq-category">
+          <h3>🔍 Geral</h3>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              O que é a Organti?
+            </div>
+            <div class="faq-answer">
+              <p>A Organti é uma plataforma de organização pessoal que ajuda você a gerenciar tarefas, projetos e sua rotina diária de forma inteligente e eficiente. Utilizamos inteligência artificial para oferecer sugestões personalizadas e otimizar sua produtividade.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              A Organti é gratuita?
+            </div>
+            <div class="faq-answer">
+              <p>Sim! Oferecemos um plano gratuito com recursos básicos que permite até 10 tarefas por dia. Para recursos avançados como IA, sincronização ilimitada e relatórios detalhados, temos planos pagos a partir de R$ 19/mês.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              Em quais dispositivos posso usar a Organti?
+            </div>
+            <div class="faq-answer">
+              <p>A Organti está disponível como aplicação web (funciona em qualquer navegador) e temos aplicativos nativos para iOS e Android. Todos os seus dados são sincronizados automaticamente entre os dispositivos.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categoria: Conta e Segurança -->
+        <div class="faq-category">
+          <h3>🔐 Conta e Segurança</h3>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              Como criar uma conta na Organti?
+            </div>
+            <div class="faq-answer">
+              <p>É muito simples! Clique em "Começar Agora" em qualquer página do nosso site, insira seu email e crie uma senha. Você também pode se cadastrar usando sua conta do Google ou Facebook para maior praticidade.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              Meus dados estão seguros?
+            </div>
+            <div class="faq-answer">
+              <p>Absolutamente! Utilizamos criptografia de ponta a ponta para proteger seus dados. Nossos servidores são hospedados em data centers certificados e seguimos as melhores práticas de segurança da indústria. Nunca compartilhamos seus dados pessoais com terceiros.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              Posso excluir minha conta?
+            </div>
+            <div class="faq-answer">
+              <p>Sim, você pode excluir sua conta a qualquer momento através das configurações da conta. Todos os seus dados serão permanentemente removidos de nossos servidores em até 30 dias.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categoria: Recursos e Funcionalidades -->
+        <div class="faq-category">
+          <h3>⚡ Recursos e Funcionalidades</h3>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              Como funciona a IA da Organti?
+            </div>
+            <div class="faq-answer">
+              <p>Nossa IA analisa seus padrões de trabalho, horários mais produtivos e tipos de tarefas para oferecer sugestões personalizadas. Ela pode sugerir quando fazer determinadas atividades, como organizar sua agenda e até mesmo identificar tarefas que podem ser automatizadas ou delegadas.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              Posso compartilhar tarefas com outras pessoas?
+            </div>
+            <div class="faq-answer">
+              <p>Sim! Nos planos Pro e Enterprise, você pode compartilhar tarefas e projetos com colegas, familiares ou amigos. É possível definir permissões específicas para cada pessoa (visualizar, editar ou administrar).</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              Como funcionam os lembretes?
+            </div>
+            <div class="faq-answer">
+              <p>Você pode configurar lembretes por email, notificação push no celular ou desktop. Os lembretes podem ser definidos para horários específicos, com antecedência personalizada, ou baseados em localização (quando disponível).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categoria: Planos e Pagamentos -->
+        <div class="faq-category">
+          <h3>💳 Planos e Pagamentos</h3>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              Qual a diferença entre os planos?
+            </div>
+            <div class="faq-answer">
+              <p>O plano Gratuito inclui recursos básicos para até 10 tarefas/dia. O plano Pro (R$ 19/mês) oferece tarefas ilimitadas, IA, sincronização e relatórios. O plano Enterprise (R$ 49/mês) adiciona recursos para equipes, integrações avançadas e suporte prioritário.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              Posso cancelar minha assinatura a qualquer momento?
+            </div>
+            <div class="faq-answer">
+              <p>Sim, você pode cancelar sua assinatura a qualquer momento sem taxas de cancelamento. Você continuará tendo acesso aos recursos pagos até o final do período já pago.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              Vocês oferecem reembolso?
+            </div>
+            <div class="faq-answer">
+              <p>Oferecemos reembolso total em até 30 dias após a compra, sem perguntas. Para assinaturas anuais, o reembolso é proporcional ao tempo não utilizado.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categoria: Suporte -->
+        <div class="faq-category">
+          <h3>🆘 Suporte</h3>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              Como entrar em contato com o suporte?
+            </div>
+            <div class="faq-answer">
+              <p>Você pode nos contatar por email (contato@organti.com), chat ao vivo (disponível para usuários Pro e Enterprise) ou através do formulário de contato em nosso site. Respondemos todos os emails em até 24 horas.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              Vocês oferecem treinamento?
+            </div>
+            <div class="faq-answer">
+              <p>Sim! Temos uma central de ajuda completa com tutoriais em vídeo, guias passo a passo e webinars regulares. Para clientes Enterprise, oferecemos sessões de treinamento personalizadas.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Não encontrou sua resposta?</h2>
+        <p>
+          Nossa equipe de suporte está pronta para ajudar você com qualquer dúvida específica.
+        </p>
+        <a href="contact.html" class="btn-hero">Entrar em Contato</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé (Footer) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Organti</h3>
+          <p>Facilitando sua jornada de organização</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Produto</h4>
+            <ul>
+              <li><a href="features.html">Recursos</a></li>
+              <li><a href="pricing.html">Preços</a></li>
+              <li><a href="updates.html">Atualizações</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Suporte</h4>
+            <ul>
+              <li><a href="help-center.html">Central de Ajuda</a></li>
+              <li><a href="contact.html">Contato</a></li>
+              <li><a href="status.html">Status</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="about.html">Sobre</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="careers.html">Carreiras</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Organti. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Funcionalidade de accordion para FAQ
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const isActive = answer.classList.contains('active');
+        
+        // Fechar todas as outras respostas
+        document.querySelectorAll('.faq-answer').forEach(ans => {
+          ans.classList.remove('active');
+        });
+        document.querySelectorAll('.faq-question').forEach(q => {
+          q.classList.remove('active');
+        });
+        
+        // Abrir/fechar a resposta clicada
+        if (!isActive) {
+          answer.classList.add('active');
+          question.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+

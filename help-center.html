@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Central de Ajuda - Organti</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .search-box {
+      max-width: 600px;
+      margin: 2rem auto;
+      position: relative;
+    }
+    
+    .search-box input {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.1rem;
+      border: 2px solid #e74c3c;
+      border-radius: 8px;
+      outline: none;
+    }
+    
+    .help-categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .help-category {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .help-category h3 {
+      color: #e74c3c;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .help-category ul {
+      list-style: none;
+    }
+    
+    .help-category ul li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .help-category ul li a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .help-category ul li a:hover {
+      color: #e74c3c;
+    }
+    
+    .popular-articles {
+      background: #f7f7f7;
+      padding: 2rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+    
+    .popular-articles h3 {
+      color: #e74c3c;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navegação -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">Organti</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="features.html">Recursos</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="ai.html">IA</a></li>
+          <li><a href="pricing.html">Preços</a></li>
+          <li><a href="support.html">Suporte</a></li>
+          <li><a href="#" class="btn-book">Começar Agora</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção Hero -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-texts" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h1>Central de Ajuda</h1>
+        <p>
+          Encontre respostas, tutoriais e guias para aproveitar ao máximo a Organti.
+        </p>
+        <div class="search-box">
+          <input type="text" placeholder="Pesquise por artigos, tutoriais ou dúvidas...">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Categorias de Ajuda -->
+  <section class="features-section">
+    <div class="container">
+      <div class="features-heading">
+        <h2>Categorias de Ajuda</h2>
+        <p>
+          Navegue pelas categorias para encontrar o que você precisa.
+        </p>
+      </div>
+      
+      <div class="help-categories">
+        <div class="help-category">
+          <h3>🚀 Primeiros Passos</h3>
+          <ul>
+            <li><a href="#">Como criar sua primeira conta</a></li>
+            <li><a href="#">Configuração inicial da Organti</a></li>
+            <li><a href="#">Tour pela interface</a></li>
+            <li><a href="#">Criando sua primeira tarefa</a></li>
+            <li><a href="#">Sincronização entre dispositivos</a></li>
+          </ul>
+        </div>
+        
+        <div class="help-category">
+          <h3>📝 Tarefas e Organização</h3>
+          <ul>
+            <li><a href="#">Como organizar tarefas por prioridade</a></li>
+            <li><a href="#">Criando projetos e categorias</a></li>
+            <li><a href="#">Usando etiquetas e filtros</a></li>
+            <li><a href="#">Configurando lembretes</a></li>
+            <li><a href="#">Compartilhando tarefas</a></li>
+          </ul>
+        </div>
+        
+        <div class="help-category">
+          <h3>🤖 Inteligência Artificial</h3>
+          <ul>
+            <li><a href="#">Como ativar a IA da Organti</a></li>
+            <li><a href="#">Sugestões inteligentes de organização</a></li>
+            <li><a href="#">Análise de produtividade com IA</a></li>
+            <li><a href="#">Configurações de privacidade da IA</a></li>
+            <li><a href="#">Treinando a IA para suas necessidades</a></li>
+          </ul>
+        </div>
+        
+        <div class="help-category">
+          <h3>📊 Relatórios e Análises</h3>
+          <ul>
+            <li><a href="#">Visualizando seu progresso</a></li>
+            <li><a href="#">Relatórios de produtividade</a></li>
+            <li><a href="#">Exportando dados</a></li>
+            <li><a href="#">Métricas de bem-estar</a></li>
+            <li><a href="#">Comparando períodos</a></li>
+          </ul>
+        </div>
+        
+        <div class="help-category">
+          <h3>⚙️ Configurações</h3>
+          <ul>
+            <li><a href="#">Personalizando a interface</a></li>
+            <li><a href="#">Configurações de notificação</a></li>
+            <li><a href="#">Gerenciando sua conta</a></li>
+            <li><a href="#">Configurações de privacidade</a></li>
+            <li><a href="#">Backup e restauração</a></li>
+          </ul>
+        </div>
+        
+        <div class="help-category">
+          <h3>💳 Planos e Pagamentos</h3>
+          <ul>
+            <li><a href="#">Comparando planos</a></li>
+            <li><a href="#">Como fazer upgrade</a></li>
+            <li><a href="#">Gerenciando pagamentos</a></li>
+            <li><a href="#">Cancelamento de assinatura</a></li>
+            <li><a href="#">Política de reembolso</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Artigos Populares -->
+  <section class="about-section">
+    <div class="container">
+      <div class="popular-articles">
+        <h3>📈 Artigos Mais Populares</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-top: 1rem;">
+          <div>
+            <h4><a href="#" style="color: #e74c3c; text-decoration: none;">Como organizar sua rotina com a Organti</a></h4>
+            <p>Guia completo para estruturar seu dia a dia de forma eficiente.</p>
+          </div>
+          <div>
+            <h4><a href="#" style="color: #e74c3c; text-decoration: none;">Maximizando a produtividade com IA</a></h4>
+            <p>Aprenda a usar nossa inteligência artificial para otimizar seu tempo.</p>
+          </div>
+          <div>
+            <h4><a href="#" style="color: #e74c3c; text-decoration: none;">Sincronização entre dispositivos</a></h4>
+            <p>Mantenha suas tarefas sempre atualizadas em todos os seus dispositivos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Estatísticas -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3>500+</h3>
+          <p>Artigos de Ajuda</p>
+        </div>
+        <div class="stat-item">
+          <h3>50+</h3>
+          <p>Tutoriais em Vídeo</p>
+        </div>
+        <div class="stat-item">
+          <h3>95%</h3>
+          <p>Problemas Resolvidos</p>
+        </div>
+        <div class="stat-item">
+          <h3>24/7</h3>
+          <p>Acesso à Central</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Não encontrou o que procurava?</h2>
+        <p>
+          Nossa equipe de suporte está pronta para ajudar você com qualquer dúvida.
+        </p>
+        <a href="contact.html" class="btn-hero">Entrar em Contato</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé (Footer) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Organti</h3>
+          <p>Facilitando sua jornada de organização</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Produto</h4>
+            <ul>
+              <li><a href="features.html">Recursos</a></li>
+              <li><a href="pricing.html">Preços</a></li>
+              <li><a href="updates.html">Atualizações</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Suporte</h4>
+            <ul>
+              <li><a href="help-center.html">Central de Ajuda</a></li>
+              <li><a href="contact.html">Contato</a></li>
+              <li><a href="status.html">Status</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="about.html">Sobre</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="careers.html">Carreiras</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Organti. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

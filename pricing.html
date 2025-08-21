@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preços - Organti</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .pricing-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .pricing-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      position: relative;
+    }
+    
+    .pricing-card.featured {
+      border: 2px solid #e74c3c;
+      transform: scale(1.05);
+    }
+    
+    .pricing-card h3 {
+      color: #e74c3c;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .price {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+    
+    .price-period {
+      color: #666;
+      margin-bottom: 2rem;
+    }
+    
+    .features-list {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+    
+    .features-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .features-list li:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navegação -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">Organti</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="features.html">Recursos</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="ai.html">IA</a></li>
+          <li><a href="pricing.html">Preços</a></li>
+          <li><a href="support.html">Suporte</a></li>
+          <li><a href="#" class="btn-book">Começar Agora</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção Hero -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-texts" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h1>Planos e Preços</h1>
+        <p>
+          Escolha o plano ideal para suas necessidades. Comece gratuitamente e evolua conforme sua organização cresce.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Planos -->
+  <section class="features-section">
+    <div class="container">
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>Gratuito</h3>
+          <div class="price">R$ 0</div>
+          <div class="price-period">por mês</div>
+          <ul class="features-list">
+            <li>Até 10 tarefas por dia</li>
+            <li>Anotações básicas</li>
+            <li>Lembretes simples</li>
+            <li>Suporte por email</li>
+            <li>Acesso web</li>
+          </ul>
+          <a href="#" class="btn-hero">Começar Grátis</a>
+        </div>
+        
+        <div class="pricing-card featured">
+          <h3>Pro</h3>
+          <div class="price">R$ 19</div>
+          <div class="price-period">por mês</div>
+          <ul class="features-list">
+            <li>Tarefas ilimitadas</li>
+            <li>IA para sugestões</li>
+            <li>Gestão de projetos</li>
+            <li>Relatórios avançados</li>
+            <li>Sincronização em nuvem</li>
+            <li>Suporte prioritário</li>
+            <li>Aplicativo móvel</li>
+          </ul>
+          <a href="#" class="btn-hero">Escolher Pro</a>
+        </div>
+        
+        <div class="pricing-card">
+          <h3>Enterprise</h3>
+          <div class="price">R$ 49</div>
+          <div class="price-period">por mês</div>
+          <ul class="features-list">
+            <li>Todos os recursos Pro</li>
+            <li>IA avançada personalizada</li>
+            <li>Integrações empresariais</li>
+            <li>Análises detalhadas</li>
+            <li>Suporte 24/7</li>
+            <li>Gerenciamento de equipes</li>
+            <li>API personalizada</li>
+          </ul>
+          <a href="#" class="btn-hero">Contatar Vendas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção FAQ -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <h2>Perguntas Frequentes sobre Preços</h2>
+        <div style="text-align: left; max-width: 800px; margin: 0 auto;">
+          <h3>Posso cancelar a qualquer momento?</h3>
+          <p>Sim, você pode cancelar sua assinatura a qualquer momento sem taxas de cancelamento.</p>
+          
+          <h3>Existe desconto para pagamento anual?</h3>
+          <p>Sim, oferecemos 20% de desconto para assinaturas anuais em todos os planos pagos.</p>
+          
+          <h3>Como funciona o período de teste?</h3>
+          <p>Oferecemos 14 dias gratuitos para testar todos os recursos do plano Pro.</p>
+          
+          <h3>Posso mudar de plano depois?</h3>
+          <p>Claro! Você pode fazer upgrade ou downgrade do seu plano a qualquer momento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Comece sua jornada hoje</h2>
+        <p>
+          Experimente gratuitamente e descubra como a Organti pode transformar sua organização.
+        </p>
+        <a href="#" class="btn-hero">Começar Teste Gratuito</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé (Footer) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Organti</h3>
+          <p>Facilitando sua jornada de organização</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Produto</h4>
+            <ul>
+              <li><a href="features.html">Recursos</a></li>
+              <li><a href="pricing.html">Preços</a></li>
+              <li><a href="updates.html">Atualizações</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Suporte</h4>
+            <ul>
+              <li><a href="help-center.html">Central de Ajuda</a></li>
+              <li><a href="contact.html">Contato</a></li>
+              <li><a href="status.html">Status</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="about.html">Sobre</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="careers.html">Carreiras</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Organti. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
